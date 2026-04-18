@@ -1,0 +1,13 @@
+name: PR WORKFLOW
+
+on: 
+  pull_request:
+    branches:
+      - dev
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - run: echo "Thanks for pull request"
